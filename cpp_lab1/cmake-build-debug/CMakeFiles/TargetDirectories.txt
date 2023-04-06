@@ -1,0 +1,3 @@
+C:/Users/wikto/Documents/AiR/Sem_6/SCR_lab/cpp_lab1/cmake-build-debug/CMakeFiles/cpp_lab1.dir
+C:/Users/wikto/Documents/AiR/Sem_6/SCR_lab/cpp_lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wikto/Documents/AiR/Sem_6/SCR_lab/cpp_lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
