@@ -5,6 +5,7 @@
 #include <mutex>
 #include <set>
 #include <memory>
+#include <atomic>
 
 using namespace std;
 
@@ -116,12 +117,96 @@ void task2()
     std::cout << std::endl;
 }
 
+void task3()
+{
+    int threads_number = 1000;
+    int a = 0;
+
+    vector<thread> collection;
+
+    collection.reserve(threads_number);
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection.emplace_back([&a]()
+        {
+            this_thread::sleep_for(chrono::milliseconds(10));
+            a += 100;
+        });
+    }
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection[i].join();
+    }
+
+    cout<< a << endl;
+
+}
+
+void task4()
+{
+    int threads_number = 1000;
+    int a = 0;
+    auto mtx = make_shared<mutex>();
+    vector<thread> collection;
+
+    collection.reserve(threads_number);
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection.emplace_back([&a, &mtx]()
+                                {
+                                    this_thread::sleep_for(chrono::milliseconds(10));
+                                    mtx->lock();
+                                    a += 100;
+                                    mtx->unlock();
+
+                                });
+    }
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection[i].join();
+    }
+
+    cout<< a << endl;
+
+}
+
+void task5()
+{
+    int threads_number = 1000;
+    atomic<int> a = 0;
+
+    vector<thread> collection;
+
+    collection.reserve(threads_number);
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection.emplace_back([&a]()
+                                {
+                                    this_thread::sleep_for(chrono::milliseconds(10));
+                                    a += 100;
+                                });
+    }
+
+    for (int i = 0; i < threads_number; i++)
+    {
+        collection[i].join();
+    }
+
+    cout<< a << endl;
+
+}
+
 int main(int argc, const char * argv[]) {
 
 // checks for available threads
 //    cout << thread::hardware_concurrency() << endl;
 
-    task2();
+    task5();
 
     return 0;
 }
