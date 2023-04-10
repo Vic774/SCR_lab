@@ -101,9 +101,9 @@ void task2()
             }
         }
 
-        for (int i = 0; i < collection.size(); i++)
+        for (auto & i : collection)
         {
-            collection[i].join();
+            i.join();
         }
 
         collection.clear();

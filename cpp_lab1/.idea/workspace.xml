@@ -58,12 +58,23 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "proofread",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "ObjectiveC"
+    ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="C/C++ File.home1.cpp">
+    <configuration name="home1.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_lab1" TARGET_NAME="home1.cpp" CONFIG_NAME="home1.cpp">
+      <option name="sourceFile" value="home1.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_lab1" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="main.cpp" />
       <method v="2">
@@ -72,6 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.home1.cpp" />
         <item itemvalue="C/C++ File.main.cpp" />
       </list>
     </recent_temporary>
@@ -88,7 +100,8 @@
       <workItem from="1680810834579" duration="1000" />
       <workItem from="1680811029894" duration="6945000" />
       <workItem from="1681047068787" duration="725000" />
-      <workItem from="1681047822364" duration="1289000" />
+      <workItem from="1681047822364" duration="1848000" />
+      <workItem from="1681134529925" duration="2991000" />
     </task>
     <servers />
   </component>
